@@ -18,9 +18,18 @@ if (isset($_SESSION["user_id"])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <title>Advanced Stream Stats</title>
+    <!-- Required meta tags always come first -->    
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />        
+    <link rel="icon" href="img/favicon.ico" sizes="16x16">  
+
+    <!-- CSS: External -->
+    <!-- Water CSS--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 <body>
     

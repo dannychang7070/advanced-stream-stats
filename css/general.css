@@ -1,0 +1,30 @@
+/* CSS: general settings for this website */
+
+
+/* body and container configurations */
+html, body {
+    height: 100%;   
+    width: 100%;
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+/* Responsive Design */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    body {background-color: green;}
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    body {background-color: yellow;}
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    body {background-color: red;}
+}

@@ -34,38 +34,44 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login</title>
+    <title>Log In - Advanced Stream Stats</title>
+    <!-- Required meta tags always come first -->    
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />        
+    <link rel="icon" href="img/favicon.ico" sizes="16x16">    
+    
+    <!-- CSS: External -->
+    <!-- Water CSS--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+
+    <!-- CSS: Internal -->
+    <!-- general --><link rel="stylesheet" href="css/general.css">
+    <!-- login --><link rel="stylesheet" href="css/login.css" type="text/css" media="screen" title="no title" charset="utf-8">    
 </head>
 <body>
     
-    <h1>Login</h1>
-    
-    <?php if ($is_invalid): ?>
-        <em>Invalid login</em>
-    <?php endif; ?>
-    
     <form method="post">
-        <label for="email">email</label>
-        <input type="email" name="email" id="email"
+        <img id="logoImg" class="img-responsive center-block" style="width: 150px" src="img/logo.png">
+        <h1>Advanced Stream Stats</h1>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"
                value="<?= htmlspecialchars($_POST["email"] ?? "") ?>">
-        
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-        
-        <button>Log in</button>
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </p>
+        <p>
+            <button>Log in</button>
+        </p>
+        <h2>New To Advanced Stream Stats? <a href="signup.html">Sign Up</a></h2>
     </form>
-    
+
 </body>
 </html>
-
-
-
-
-
-
-
-
